@@ -1,608 +1,915 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/avatar.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/avatar.jpg">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="assets/css/aos.css" rel="stylesheet">
-    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/kursor.css">
-    <link rel="stylesheet" href="./styles.css">
-    <title>Portfolio Website | George Kwabena Asiedu</title>
-</head>
-<body>
-<header class="header">
-    <div class="container">
-        <div class="logo" data-aos-delay="200" data-aos="fade-down">
-            George
-        </div>
-        <nav class="nav">
-            <ul class="nav-links">
-                <li class="services active" data-aos-delay="200" data-aos="fade-down"><a href="#services">Services</a></li>
-                <li class="portfolios" data-aos-delay="250" data-aos="fade-down"><a href="#portfolios">Portfolios</a></li>
-                <li class="experience" data-aos-delay="300" data-aos="fade-down"><a href="#experience">Experience</a></li>
-                <li class="blog" data-aos-delay="350" data-aos="fade-down"><a href="#blog">Blog</a></li>
-                <li class="testimonials mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#testimonials">Testimonials</a></li>
-                <li class="education-skill mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#education-skill">Education</a></li>
-                <li class="contact mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="#contact">Contact</a></li>
-                <li class="mobile-link" data-aos-delay="350" data-aos="fade-down"><a href="assets/resume.pdf" >Resume</a></li>
-                <li data-aos-delay="400" data-aos="fade-down" class="more-links">
-                    <svg viewBox="0 0 12 3"><use xlink:href="assets/img/sprite.svg#more-links"></use></svg>
-                    <ul class="menu-list">
-                        <li class="testimonials"><a href="#testimonials">Testimonials</a></li>
-                        <li class="education-skill"><a href="#education-skill">Education</a></li>
-                        <li class="contact"><a href="#contact">Contact</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-        <div class="right-content" data-aos-delay="500" data-aos="fade-down">
-            <div class="theme-color-toggle">
-                <svg class="moon" viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#moon-icon"></use>
-                </svg>
-                <svg class="sun" viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#sun-icon"></use>
-                </svg>
-            </div>
-            <a href="assets/resume.pdf" target="_blank" class="btn btn-outline-light download-resume">Resume</a>
-            <svg class="mobile-menu-toggle" viewBox="0 0 24 24">
-                <use xlink:href="assets/img/sprite.svg#menu"></use>
-            </svg>
-        </div>
-    </div>
-</header>
-<main>
-    <section class="hero-section">
-        <div class="container">
-            <div class="content" data-aos="fade-up">
-                <p class="above-title mb-16">Hello, I am</p>
-                <h1 class="full-name">George <span class="primary">Kwabena Asiedu.</span></h1>
-                <p class="about">
-                    I'm a Full-stack Developer with a passion for building scalable, high-performance 
-                    web applications and APIs. Skilled in Python, FastAPI, Nest.js, Node.js, and modern 
-                    front-end frameworks like Angular, I transform complex requirements into intuitive, 
-                    responsive, and visually appealing user experiences. With strong expertise in JavaScript, 
-                    TypeScript, and AWS services, I deliver end-to-end solutions that are secure, cloud-ready, 
-                    and optimized for performance. Whether it's crafting dynamic single-page applications, 
-                    architecting RESTful APIs, or deploying robust cloud infrastructures, I thrive on creating 
-                    digital products that are both impactful and future-proof.
-                </p>
-                <a href="assets/resume.pdf" download="assets/resume.pdf" class="btn btn-outline-light download-resume-mobile">Download Resume</a>
-                <ul class="social-icons">
-                    <li>
-                        <a href="https://github.com/george-asiedu">
-                            <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#github-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/george-kwabena-asiedu/">
-                            <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
-                            </svg>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="image" data-aos="fade-up">
-                <div class="cover">
-                    <svg class="lines-vector" viewBox="0 0 199 210">
-                        <use xlink:href="assets/img/sprite.svg#lines-vector"></use>
-                    </svg>
-                </div>
-                <img class="avatar" src="assets/img/avatar.jpg" alt="George Asiedu">
-            </div>
-        </div>
-    </section>
-    <section class="service-section" id="services">
-        <div class="container">
-            <div class="section-name center" data-aos="fade-up">
-                <div class="content">
-                    <p class="above-title">Services</p>
-                    <h4 class="title">Specialized in</h4>
-                </div>
-            </div>
-            <div class="service-item-wrapper">
-                <div class="service-item" data-aos="fade-up" data-aos-delay="200">
-                    <div class="icon">
-                        <svg viewBox="0 0 25 24">
-                            <use xlink:href="assets/img/sprite.svg#ux-service"></use>
-                        </svg>
-                    </div>
-                    <h4 class="title">Responsive Design</h4>
-                    <p class="body">
-                        Transform your ideas into visually appealing and fully responsive designs
-                        that adapt seamlessly across all devices and platforms.
-                    </p>
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon">
-                        <svg viewBox="0 0 25 24">
-                            <use xlink:href="assets/img/sprite.svg#web-development"></use>
-                        </svg>
-                    </div>
-                    <h4 class="title">Web Development</h4>
-                    <p class="body">
-                        Build responsive, user-friendly websites and web applications,
-                        optimized for performance, scalability, and seamless user experience.
-                    </p>
-                </div>
-                <div class="service-item" data-aos="fade-up" data-aos-delay="300">
-                    <div class="icon">
-                        <svg viewBox="0 0 25 24">
-                            <use xlink:href="assets/img/sprite.svg#web-development"></use>
-                        </svg>
-                    </div>
-                    <h4 class="title">AWS Services</h4>
-                    <p class="body">
-                        Design, deploy, and manage scalable cloud infrastructure on AWS,
-                        ensuring high availability, security, and performance.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <section class="portfolio-section" id="portfolios">
-        <div class="container">
-            <div class="section-name" data-aos="fade-up" data-aos-delay="200">
-                <div class="content">
-                    <p class="above-title">My works</p>
-                    <h4 class="title">Featured Portfolios</h4>
-                </div>
-                <div class="slider-navigation">
-                    <div class="prev">
-                        <svg viewBox="0 0 24 24">
-                            <use xlink:href="assets/img/sprite.svg#arrow-left"></use>
-                        </svg>
-                    </div>
-                    <div class="next">
-                        <svg viewBox="0 0 24 24">
-                            <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio-item-wrapper">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
-                            <article class="portfolio-item">
-                                <figure>
-                                    <img src="assets/img/portfolio.png" alt="portfolio-img">
-                                </figure>
-                                <div class="detail">
-                                    <h4 class="title">Portfolio Website</h4>
-                                    <div class="bottom">
-                                        <span class="tag">HTML</span>
-                                        <span class="tag">CSS</span>
-                                        <span class="tag">Javascript</span>
-                                        <a class="link" href="https://earnest-chebakia-075b8d.netlify.app/">
-                                            <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-                            <article class="portfolio-item">
-                                <figure>
-                                    <img src="assets/img/pdr.png" alt="pdr-img">
-                                </figure>
-                                <div class="detail">
-                                    <h4 class="title">Web applications</h4>
-                                    <div class="bottom">
-                                        <span class="tag">Angular</span>
-                                        <span class="tag">Tailwind</span>
-                                        <span class="tag">Nest.js</span>
-                                        <a class="link" href="https://personnel-disaster-recovery.vercel.app/">
-                                            <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
-                            <article class="portfolio-item">
-                                <figure>
-                                    <img src="assets/img/ecommerce.png" alt="ecommerce-img">
-                                </figure>
-                                <div class="detail">
-                                    <h4 class="title">Ecommerce</h4>
-                                    <div class="bottom">
-                                        <span class="tag">Angular</span>
-                                        <span class="tag">Tailwind</span>
-                                        <span class="tag">Node.js</span>
-                                        <a class="link" href="https://dripluxury-clothing.vercel.app/">
-                                            <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
-                            <article class="portfolio-item">
-                                <figure>
-                                    <img src="assets/img/portal.png" alt="portal-img">
-                                </figure>
-                                <div class="detail">
-                                    <h4 class="title">School Portal</h4>
-                                    <div class="bottom">
-                                        <span class="tag">Angular</span>
-                                        <span class="tag">NGRX</span>
-                                        <span class="tag">Nest.js</span>
-                                        <a class="link" href="https://hafsurh-portal.vercel.app/">
-                                            <svg viewBox="0 0 24 24">
-                                                <use xlink:href="assets/img/sprite.svg#link"></use>
-                                            </svg>
-                                        </a>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="experience-section" id="experience">
-        <div class="container">
-            <div class="side">
-                <div class="section-name" data-aos="fade-up">
-                    <p class="above-title">Career path</p>
-                    <h4 class="title">Work Experience</h4>
-                </div>
-                <div class="companies-list">
-                    <div class="selector">
-                        <svg viewBox="0 0 24 24">
-                            <use xlink:href="assets/img/sprite.svg#arrow-right"></use>
-                        </svg>
-                    </div>
-                    <ul>
-                        <li data-tab="aws" class="active" data-aos="fade-up">AWS Cloud Practitioner</li>
-                        <li data-tab="freelancer" data-aos-delay="50" data-aos="fade-up">Freelancer</li>
-                        <li data-tab="amalitech" data-aos-delay="50" data-aos="fade-up">Amalitech</li>
-                        <li data-tab="afrolynk" data-aos-delay="100" data-aos="fade-up">Afrolynk</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="content active" id="aws">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <h4 class="job-title">AWS Cloud Practitioner <span class="company-name"> Amalitech</span></h4>
-                    <p class="location">Takoradi, Ghana</p>
-                    <p class="period">Feb 2025 - Present · Intern</p>
-                    <ul class="stack-list">
-                        <li class="tag">AWS CLI</li>
-                        <li class="tag">AWS Console</li>
-                    </ul>
-                </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li data-aos-delay="50" data-aos="fade-up">Provisioned and managed cloud infrastructure using AWS services such as EC2, S3, and IAM.</li>
-                    <li data-aos-delay="100" data-aos="fade-up">Monitored system performance and optimized resources to ensure high availability and scalability.</li>
-                    <li data-aos-delay="150" data-aos="fade-up">Implemented security best practices, including setting up VPCs, security groups, and access controls.</li>
-                    <li data-aos-delay="200" data-aos="fade-up">Automated deployments using AWS CLI and CloudFormation templates.</li>
-                </ul>
-            </div>
-            <div class="content" id="freelancer">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <h4 class="job-title">Full-stack developer <span class="company-name"> Freelancer</span></h4>
-                    <p class="location">Accra, Ghana</p>
-                    <p class="period">Nov 2024 - Jan 2025 · Full-time</p>
-                    <ul class="stack-list">
-                        <li class="tag">Angular</li>
-                        <li class="tag">Nest.js</li>
-                    </ul>
-                </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li>Developed and maintained responsive web applications using Angular for the frontend.</li>
-                    <li>Built scalable and performant server-side APIs using NestJS with TypeScript and PostgresSQL.</li>
-                    <li>Implemented dynamic server-rendered pages and SEO optimizations using Next.js.</li>
-                    <li>Collaborated with clients to gather requirements and deliver custom full-stack solutions on time.</li>
-                </ul>
-            </div>
-            <div class="content" id="amalitech">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <h4 class="job-title">Front-end developer <span class="company-name"> Amalitech</span></h4>
-                    <p class="location">Takoradi, Ghana</p>
-                    <p class="period">Oct 2023 - Sept 2024 · Full-time</p>
-                    <ul class="stack-list">
-                        <li class="tag">Angular</li>
-                        <li class="tag">Typescript</li>
-                        <li class="tag">First Level Support</li>
-                    </ul>
-                </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li>Developed and maintained dynamic user interfaces using Angular and React frameworks.</li>
-                    <li>Collaborated with UI/UX designers to translate wireframes and mockups into responsive web pages.</li>
-                    <li>Optimized front-end performance to enhance user experience and reduce load times.</li>
-                    <li>Integrated RESTful APIs and handled state management using services and libraries like NgRx and Redux.</li>
-                </ul>
-            </div>
-            <div class="content" id="afrolynk">
-                <div class="headline" data-aos-delay="50" data-aos="fade-up">
-                    <h4 class="job-title">Front-end developer <span class="company-name"> Afrolynk</span></h4>
-                    <p class="location">Takoradi, Ghana</p>
-                    <p class="period">June 2021 - July 2023 · Full-time</p>
-                    <ul class="stack-list">
-                        <li class="tag">HTML/CSS</li>
-                        <li class="tag">Bootstrap</li>
-                        <li class="tag">Javascript</li>
-                    </ul>
-                </div>
-                <div class="line"></div>
-                <ul class="responsibilities">
-                    <li>Collaborated with a cross-functional team of 5 people to
-                        enhance UI components.</li>
-                    <li>Led the optimization of existing code, reducing page load times by
-                        30%, and enhancing accessibility standards</li>
-                    <li>Worked closely with designers to implement pixel-perfect
-                        designs and improve usability and aesthetics</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <section class="blog-section" id="blog">
-        <div class="container">
-            <div class="section-name center" data-aos="fade-up">
-                <div class="content">
-                    <p class="above-title">My articles</p>
-                    <h4 class="title">Personal Blog</h4>
-                </div>
-            </div>
-            <div class="post-item-wrapper">
-                <article class="post-item" data-aos="fade-up" data-aos-delay="50" >
-                    <figure>
-                        <img src="assets/img/facade.jpg" alt="facade-image">
-                    </figure>
-                    <div class="content">
-                        <h3 class="title">Facade Pattern NGRx Architecture</h3>
-                        <div class="detail">
-                            <time class="tag">March 2025</time>
-                        </div>
-                        <p class="body">
-                            The Facade Pattern is a structural design pattern that provides
-                            a simplified interface to a complex...
-                        </p>
-                        <div class="bottom">
-                            <a href="https://dev.to/georg-easiedu/facade-pattern-with-ngrx-architecture-3l6p">Continue Reading</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="post-item" data-aos="fade-up" data-aos-delay="100" >
-                    <figure>
-                        <img src="assets/img/security.jpg" alt="iam security">
-                    </figure>
-                    <div class="content">
-                        <h3 class="title">Cloud Security with AWS IAM</h3>
-                        <div class="detail">
-                            <time class="tag">April, 2025</time>
-                        </div>
-                        <p class="body">
-                            AWS IAM is and Identity Access Manager, and we use it to manage access to
-                            resources on an AWS account. I used AWS IAM...
-                        </p>
-                        <div class="bottom">
-                            <a href="https://dev.to/georg-easiedu/understanding-cloud-security-with-aws-identity-and-access-management-iam-5139">Continue Reading</a>
-                        </div>
-                    </div>
-                </article>
-                <article class="post-item" data-aos="fade-up" data-aos-delay="150" >
-                    <figure>
-                        <img src="assets/img/rxjs.png" alt="rxjs-img">
-                    </figure>
-                    <div class="content">
-                        <h3 class="title">Pitfalls in using RxJs operators</h3>
-                        <div class="detail">
-                            <time class="tag">Sept, 2024</time>
-                        </div>
-                        <p class="body">RxJs i a reactive design pattern used in angular. Although it has its advantages,
-                        there are also many ...</p>
-                        <div class="bottom">
-                            <a href="#">Continue Reading</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-    <section class="testimonial-section" id="testimonials">
-        <div class="container">
-            <div class="section-name" data-aos="fade-up">
-                <p class="above-title">My clients</p>
-                <h4 class="title">Testimonials</h4>
-            </div>
-            <div class="testimonial-item-wrapper">
-                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="50">
-                    <img class="avatar" src="assets/img/testimonial-avatar-1.jpg" alt="Amelia Miller">
-                    <p class="text">We were very pleased to hear how you resolved our website's user interface issues and challenges.</p>
-                    <p class="name">Amelia Miller</p>
-                    <p class="tag job-title">Designer</p>
-                </div>
-                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                    <img class="avatar" src="assets/img/testimonial-avatar-2.jpg" alt="Amelia Miller">
-                    <p class="text">I’m glad I decided to work with you. The project was delivered on time with all the requirements.</p>
-                    <p class="name">James Delaney</p>
-                    <p class="tag job-title">Developer</p>
-                </div>
-                <div class="testimonial-item" data-aos="fade-up" data-aos-delay="150">
-                    <img class="avatar" src="assets/img/testimonial-avatar-3.jpg" alt="Amelia Miller">
-                    <p class="text">The management of our projects was always faced with difficulties, but you handled these well.</p>
-                    <p class="name">Isabella Bennett</p>
-                    <p class="tag job-title">Manager</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="education-skill-section" id="education-skill">
-        <div class="container">
-            <div class="section-name" data-aos="fade-up">
-                <p class="above-title">Learning Path</p>
-                <h4 class="title">Education & Skills</h4>
-            </div>
-            <div class="education-skill-wrapper">
-                <div class="education">
-                    <div class="education-item" data-aos="fade-up" data-aos-delay="100">
-                        <h4 class="school">Takoradi Technical University</h4>
-                        <p class="degree-field">Bachelor's degree - Software Engineering</p>
-                        <p class="date">2024</p>
-                    </div>
-                    <div class="education-item" data-aos="fade-up" data-aos-delay="150">
-                        <h4 class="school">Takoradi Technical University</h4>
-                        <p class="degree-field">Higher National Diploma - Information Technology</p>
-                        <p class="date">2021 - 2023</p>
-                    </div>
-                </div>
-                <div class="skill">
-                    <p class="description" data-aos="fade-up" data-aos-delay="50">
-                        With over 4 years of hands-on experience in web development,
-                        I've consistently explored modern technologies and frameworks to sharpen my skills.
-                        Below is a snapshot of my technical expertise.
-                    </p>
-                    <div class="progress-bar-wrapper" data-aos="fade-up" data-aos-delay="50">
-                        <div class="progress-bar">
-                            <p class="label">Angular</p>
-                            <div class="main-bar"><div class="fill" data-width="75"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">HTML/CSS/SCSS</p>
-                            <div class="main-bar"><div class="fill" data-width="95"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">JavaScript/Typescript</p>
-                            <div class="main-bar"><div class="fill" data-width="75"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">Tailwind/Angular Material</p>
-                            <div class="main-bar"><div class="fill" data-width="95"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">Nest.js</p>
-                            <div class="main-bar"><div class="fill" data-width="60"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">FastAPI</p>
-                            <div class="main-bar"><div class="fill" data-width="40"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">Node.js</p>
-                            <div class="main-bar"><div class="fill" data-width="75"></div></div>
-                        </div>
-                        <div class="progress-bar">
-                            <p class="label">AWS Cloud Services</p>
-                            <div class="main-bar"><div class="fill" data-width="65"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="contact-section" id="contact">
-        <div class="container">
-            <div class="contact-wrapper">
-                <div class="contact-form">
-                    <form name="contactForm">
-                        <p class="success-submit-message">Your message has been successfully sent.</p>
-                        <p class="fail-submit-message">An error occurred while sending the message.</p>
-                        <div class="form-control">
-                            <input aria-label="name" name="name" class="mb-16" type="text" placeholder="Name" data-aos="fade-up" data-aos-delay="50">
-                            <p class="validation-error name">Please enter your name.</p>
-                        </div>
-                        <div class="form-control">
-                            <input aria-label="email" name="email" class="mb-24" type="text" placeholder="Email" data-aos="fade-up" data-aos-delay="100">
-                            <p class="validation-error email">Please enter your email address.</p>
-                        </div>
-                        <div class="form-control">
-                            <textarea aria-label="message" name="message" rows="8" placeholder="Message" data-aos="fade-up" data-aos-delay="150"></textarea>
-                            <p class="validation-error message">Please enter your message.</p>
-                        </div>
-                        <button class="btn btn-primary submit-btn" data-aos="fade-up" data-aos-delay="200">
-                            Submit
-                            <span class="loading"></span>
-                        </button>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="contact-info-item" data-aos="fade-up" data-aos-delay="50">
-                        <div class="icon">
-                            <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#address-icon"></use>
-                            </svg>
-                        </div>
-                        <div class="content">
-                            <h4 class="title">Address</h4>
-                            <p class="body">GPRTU Last Stop, Kasoa, Central Region, Ghana</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item" data-aos="fade-up" data-aos-delay="150">
-                        <div class="icon">
-                            <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#phone-icon"></use>
-                            </svg>
-                        </div>
-                        <div class="content">
-                            <h4 class="title">Phone</h4>
-                            <p class="body">(233) 203631199</p>
-                        </div>
-                    </div>
-                    <div class="contact-info-item" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon">
-                            <svg viewBox="0 0 24 24">
-                                <use xlink:href="assets/img/sprite.svg#email-icon"></use>
-                            </svg>
-                        </div>
-                        <div class="content">
-                            <h4 class="title">Email</h4>
-                            <p class="body">asiedug41@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer class="footer">
-    <ul class="social-icons" data-aos="fade-up" data-aos-delay="50">
-        <li>
-            <a href="https://github.com/george-asiedu">
-                <svg viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#github-icon"></use>
-                </svg>
-            </a>
-        </li>
-        <li>
-            <a href="linkedin.com/in/george-kwabena-asiedu">
-                <svg viewBox="0 0 24 24">
-                    <use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
-    <p class="copyright" data-aos="fade-up" data-aos-delay="100">© <span class="year">year</span>  -  George<span class="bold"> Asiedu</span></p>
-</footer>
-</body>
-<script src="assets/js/aos.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/kursor.js"></script>
-<script src="assets/js/svg4everybody.min.js"></script>
-<script src="assets/js/css-vars-ponyfill.min.js"></script>
-<script src="assets/js/unfetch.js"></script>
-<script src="./script.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/img/avatar.jpg"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/img/avatar.jpg"
+		/>
+		<link rel="manifest" href="assets/favicon/site.webmanifest" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="assets/css/aos.css" rel="stylesheet" />
+		<link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="assets/css/kursor.css" />
+		<link rel="stylesheet" href="./styles.css" />
+		<title>Portfolio Website | George Kwabena Asiedu</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="logo" data-aos-delay="200" data-aos="fade-down">George</div>
+				<nav class="nav">
+					<ul class="nav-links">
+						<li
+							class="services active"
+							data-aos-delay="200"
+							data-aos="fade-down"
+						>
+							<a href="#services">Services</a>
+						</li>
+						<li class="portfolios" data-aos-delay="250" data-aos="fade-down">
+							<a href="#portfolios">Portfolios</a>
+						</li>
+						<li class="experience" data-aos-delay="300" data-aos="fade-down">
+							<a href="#experience">Experience</a>
+						</li>
+						<li class="blog" data-aos-delay="350" data-aos="fade-down">
+							<a href="#blog">Blog</a>
+						</li>
+						<li
+							class="testimonials mobile-link"
+							data-aos-delay="350"
+							data-aos="fade-down"
+						>
+							<a href="#testimonials">Testimonials</a>
+						</li>
+						<li
+							class="education-skill mobile-link"
+							data-aos-delay="350"
+							data-aos="fade-down"
+						>
+							<a href="#education-skill">Education</a>
+						</li>
+						<li
+							class="contact mobile-link"
+							data-aos-delay="350"
+							data-aos="fade-down"
+						>
+							<a href="#contact">Contact</a>
+						</li>
+						<li class="mobile-link" data-aos-delay="350" data-aos="fade-down">
+							<a href="assets/resume.pdf">Resume</a>
+						</li>
+						<li data-aos-delay="400" data-aos="fade-down" class="more-links">
+							<svg viewBox="0 0 12 3">
+								<use xlink:href="assets/img/sprite.svg#more-links"></use>
+							</svg>
+							<ul class="menu-list">
+								<li class="testimonials">
+									<a href="#testimonials">Testimonials</a>
+								</li>
+								<li class="education-skill">
+									<a href="#education-skill">Education</a>
+								</li>
+								<li class="contact"><a href="#contact">Contact</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+				<div class="right-content" data-aos-delay="500" data-aos="fade-down">
+					<div class="theme-color-toggle">
+						<svg class="moon" viewBox="0 0 24 24">
+							<use xlink:href="assets/img/sprite.svg#moon-icon"></use>
+						</svg>
+						<svg class="sun" viewBox="0 0 24 24">
+							<use xlink:href="assets/img/sprite.svg#sun-icon"></use>
+						</svg>
+					</div>
+					<a
+						href="assets/resume.pdf"
+						target="_blank"
+						class="btn btn-outline-light download-resume"
+						>Resume</a
+					>
+					<svg class="mobile-menu-toggle" viewBox="0 0 24 24">
+						<use xlink:href="assets/img/sprite.svg#menu"></use>
+					</svg>
+				</div>
+			</div>
+		</header>
+		<main>
+			<section class="hero-section">
+				<div class="container">
+					<div class="content" data-aos="fade-up">
+						<p class="above-title mb-16">Hello, I am</p>
+						<h1 class="full-name">
+							George <span class="primary">Kwabena Asiedu.</span>
+						</h1>
+						<p class="about">
+							I'm a Full-stack Developer with a passion for building scalable,
+							high-performance web applications and APIs. Skilled in Python,
+							FastAPI, Nest.js, Node.js, and modern front-end frameworks like
+							Angular, I transform complex requirements into intuitive,
+							responsive, and visually appealing user experiences. With strong
+							expertise in JavaScript, TypeScript, and AWS services, I deliver
+							end-to-end solutions that are secure, cloud-ready, and optimized
+							for performance. Whether it's crafting dynamic single-page
+							applications, architecting RESTful APIs, or deploying robust cloud
+							infrastructures, I thrive on creating digital products that are
+							both impactful and future-proof.
+						</p>
+						<a
+							href="assets/resume.pdf"
+							download="assets/resume.pdf"
+							class="btn btn-outline-light download-resume-mobile"
+							>Download Resume</a
+						>
+						<ul class="social-icons">
+							<li>
+								<a href="https://github.com/george-asiedu">
+									<svg viewBox="0 0 24 24">
+										<use xlink:href="assets/img/sprite.svg#github-icon"></use>
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/george-kwabena-asiedu/">
+									<svg viewBox="0 0 24 24">
+										<use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="image" data-aos="fade-up">
+						<div class="cover">
+							<svg class="lines-vector" viewBox="0 0 199 210">
+								<use xlink:href="assets/img/sprite.svg#lines-vector"></use>
+							</svg>
+						</div>
+						<img
+							class="avatar"
+							src="assets/img/avatar.jpg"
+							alt="George Asiedu"
+						/>
+					</div>
+				</div>
+			</section>
+			<section class="service-section" id="services">
+				<div class="container">
+					<div class="section-name center" data-aos="fade-up">
+						<div class="content">
+							<p class="above-title">Services</p>
+							<h4 class="title">Specialized in</h4>
+						</div>
+					</div>
+					<div class="service-item-wrapper">
+						<div class="service-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="icon">
+								<svg viewBox="0 0 25 24">
+									<use xlink:href="assets/img/sprite.svg#ux-service"></use>
+								</svg>
+							</div>
+							<h4 class="title">Responsive Design</h4>
+							<p class="body">
+								Transform your ideas into visually appealing and fully
+								responsive designs that adapt seamlessly across all devices and
+								platforms.
+							</p>
+						</div>
+						<div class="service-item" data-aos="fade-up" data-aos-delay="300">
+							<div class="icon">
+								<svg viewBox="0 0 25 24">
+									<use xlink:href="assets/img/sprite.svg#web-development"></use>
+								</svg>
+							</div>
+							<h4 class="title">Web Development</h4>
+							<p class="body">
+								Build responsive, user-friendly websites and web applications,
+								optimized for performance, scalability, and seamless user
+								experience.
+							</p>
+						</div>
+						<div class="service-item" data-aos="fade-up" data-aos-delay="300">
+							<div class="icon">
+								<svg viewBox="0 0 25 24">
+									<use xlink:href="assets/img/sprite.svg#web-development"></use>
+								</svg>
+							</div>
+							<h4 class="title">AWS Services</h4>
+							<p class="body">
+								Design, deploy, and manage scalable cloud infrastructure on AWS,
+								ensuring high availability, security, and performance.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="portfolio-section" id="portfolios">
+				<div class="container">
+					<div class="section-name" data-aos="fade-up" data-aos-delay="200">
+						<div class="content">
+							<p class="above-title">My works</p>
+							<h4 class="title">Featured Portfolios</h4>
+						</div>
+						<div class="slider-navigation">
+							<div class="prev">
+								<svg viewBox="0 0 24 24">
+									<use xlink:href="assets/img/sprite.svg#arrow-left"></use>
+								</svg>
+							</div>
+							<div class="next">
+								<svg viewBox="0 0 24 24">
+									<use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio-item-wrapper">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								<div
+									class="swiper-slide"
+									data-aos="fade-up"
+									data-aos-delay="200"
+								>
+									<article class="portfolio-item">
+										<figure>
+											<img src="assets/img/portfolio.png" alt="portfolio-img" />
+										</figure>
+										<div class="detail">
+											<h4 class="title">Portfolio Website</h4>
+											<div class="bottom">
+												<span class="tag">HTML</span>
+												<span class="tag">CSS</span>
+												<span class="tag">Javascript</span>
+												<a
+													class="link"
+													href="https://earnest-chebakia-075b8d.netlify.app/"
+												>
+													<svg viewBox="0 0 24 24">
+														<use xlink:href="assets/img/sprite.svg#link"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div
+									class="swiper-slide"
+									data-aos="fade-up"
+									data-aos-delay="300"
+								>
+									<article class="portfolio-item">
+										<figure>
+											<img src="assets/img/pdr.png" alt="pdr-img" />
+										</figure>
+										<div class="detail">
+											<h4 class="title">Web applications</h4>
+											<div class="bottom">
+												<span class="tag">Angular</span>
+												<span class="tag">Tailwind</span>
+												<span class="tag">Nest.js</span>
+												<a
+													class="link"
+													href="https://personnel-disaster-recovery.vercel.app/"
+												>
+													<svg viewBox="0 0 24 24">
+														<use xlink:href="assets/img/sprite.svg#link"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div
+									class="swiper-slide"
+									data-aos="fade-up"
+									data-aos-delay="400"
+								>
+									<article class="portfolio-item">
+										<figure>
+											<img src="assets/img/ecommerce.png" alt="ecommerce-img" />
+										</figure>
+										<div class="detail">
+											<h4 class="title">Ecommerce</h4>
+											<div class="bottom">
+												<span class="tag">Angular</span>
+												<span class="tag">Tailwind</span>
+												<span class="tag">Node.js</span>
+												<a
+													class="link"
+													href="https://dripluxury-clothing.vercel.app/"
+												>
+													<svg viewBox="0 0 24 24">
+														<use xlink:href="assets/img/sprite.svg#link"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div
+									class="swiper-slide"
+									data-aos="fade-up"
+									data-aos-delay="200"
+								>
+									<article class="portfolio-item">
+										<figure>
+											<img src="assets/img/portal.png" alt="portal-img" />
+										</figure>
+										<div class="detail">
+											<h4 class="title">School Portal</h4>
+											<div class="bottom">
+												<span class="tag">Angular</span>
+												<span class="tag">NGRX</span>
+												<span class="tag">Nest.js</span>
+												<a
+													class="link"
+													href="https://hafsurh-portal.vercel.app/"
+												>
+													<svg viewBox="0 0 24 24">
+														<use xlink:href="assets/img/sprite.svg#link"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="experience-section" id="experience">
+				<div class="container">
+					<div class="side">
+						<div class="section-name" data-aos="fade-up">
+							<p class="above-title">Career path</p>
+							<h4 class="title">Work Experience</h4>
+						</div>
+						<div class="companies-list">
+							<div class="selector">
+								<svg viewBox="0 0 24 24">
+									<use xlink:href="assets/img/sprite.svg#arrow-right"></use>
+								</svg>
+							</div>
+							<ul>
+								<li data-tab="aws" class="active" data-aos="fade-up">
+									AWS Cloud Practitioner
+								</li>
+								<li
+									data-tab="freelancer"
+									data-aos-delay="50"
+									data-aos="fade-up"
+								>
+									Freelancer
+								</li>
+								<li data-tab="amalitech" data-aos-delay="50" data-aos="fade-up">
+									Amalitech
+								</li>
+								<li data-tab="afrolynk" data-aos-delay="100" data-aos="fade-up">
+									Afrolynk
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="content active" id="aws">
+						<div class="headline" data-aos-delay="50" data-aos="fade-up">
+							<h4 class="job-title">
+								AWS Cloud Practitioner
+								<span class="company-name"> Amalitech</span>
+							</h4>
+							<p class="location">Takoradi, Ghana</p>
+							<p class="period">Feb 2025 - May 2025 · Intern</p>
+							<ul class="stack-list">
+								<li class="tag">AWS CLI</li>
+								<li class="tag">AWS Console</li>
+								<li class="tag">AWS Services</li>
+							</ul>
+						</div>
+						<div class="line"></div>
+						<ul class="responsibilities">
+							<li data-aos-delay="50" data-aos="fade-up">
+								Provisioned and managed cloud infrastructure using AWS services
+								such as EC2, S3, RDS, IAM, VPC, CloudFormation, Amplify, etc.
+							</li>
+							<li data-aos-delay="300" data-aos="fade-up">
+								Led a team of eight, providing guidance and support that helped
+								them successfully achieve their AWS certifications.
+							</li>
+							<li data-aos-delay="100" data-aos="fade-up">
+								Monitored system performance and optimized resources to ensure
+								high availability and scalability.
+							</li>
+							<li data-aos-delay="150" data-aos="fade-up">
+								Implemented security best practices, including setting up VPCs,
+								security groups, and access controls.
+							</li>
+							<li data-aos-delay="200" data-aos="fade-up">
+								Automated deployments using AWS CLI and CloudFormation
+								templates.
+							</li>
+							<li data-aos-delay="250" data-aos="fade-up">
+								Collaborated with development teams to integrate AWS services
+								into applications and improve overall system architecture.
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="freelancer">
+						<div class="headline" data-aos-delay="50" data-aos="fade-up">
+							<h4 class="job-title">
+								Full-stack developer
+								<span class="company-name"> Freelancer</span>
+							</h4>
+							<p class="location">Accra, Ghana</p>
+							<p class="period">Nov 2024 - Jan 2025 · Part-time</p>
+							<ul class="stack-list">
+								<li class="tag">Angular</li>
+								<li class="tag">Nest.js</li>
+								<li class="tag">Node.js</li>
+							</ul>
+						</div>
+						<div class="line"></div>
+						<ul class="responsibilities">
+							<li>
+								Designed and developed responsive, user-friendly interfaces with
+								Angular, ensuring cross-browser compatibility and mobile
+								optimization.
+							</li>
+							<li>
+								Built and maintained scalable RESTful APIs using Nest.js,
+								leveraging TypeScript for type safety and PostgreSQL for data
+								persistence.
+							</li>
+							<li>
+								Integrated frontend and backend components to deliver seamless
+								full-stack functionality.
+							</li>
+							<li>
+								Optimized application performance and implemented secure
+								authentication and authorization flows.
+							</li>
+							<li>
+								Collaborated with clients to gather requirements, propose
+								technical solutions, and deliver projects on time.
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="amalitech">
+						<div class="headline" data-aos-delay="50" data-aos="fade-up">
+							<h4 class="job-title">
+								Front-end developer <span class="company-name"> Amalitech</span>
+							</h4>
+							<p class="location">Takoradi, Ghana</p>
+							<p class="period">Oct 2023 - Sept 2024 · Full-time</p>
+							<ul class="stack-list">
+								<li class="tag">Angular</li>
+								<li class="tag">Typescript</li>
+								<li class="tag">First Level Support</li>
+							</ul>
+						</div>
+						<div class="line"></div>
+						<ul class="responsibilities">
+							<li>
+								Developed and maintained dynamic user interfaces using Angular
+								and React frameworks.
+							</li>
+							<li>
+								Collaborated with UI/UX designers to translate wireframes and
+								mockups into responsive web pages.
+							</li>
+							<li>
+								Optimized front-end performance to enhance user experience and
+								reduce load times.
+							</li>
+							<li>
+								Integrated RESTful APIs and handled state management using
+								services and libraries like NgRx and Redux.
+							</li>
+						</ul>
+					</div>
+					<div class="content" id="afrolynk">
+						<div class="headline" data-aos-delay="50" data-aos="fade-up">
+							<h4 class="job-title">
+								Front-end developer <span class="company-name"> Afrolynk</span>
+							</h4>
+							<p class="location">Takoradi, Ghana</p>
+							<p class="period">June 2021 - July 2023 · Full-time</p>
+							<ul class="stack-list">
+								<li class="tag">HTML/CSS</li>
+								<li class="tag">Bootstrap</li>
+								<li class="tag">Javascript</li>
+							</ul>
+						</div>
+						<div class="line"></div>
+						<ul class="responsibilities">
+							<li>
+								Collaborated with a cross-functional team of 5 people to enhance
+								UI components.
+							</li>
+							<li>
+								Led the optimization of existing code, reducing page load times
+								by 30%, and enhancing accessibility standards
+							</li>
+							<li>
+								Worked closely with designers to implement pixel-perfect designs
+								and improve usability and aesthetics
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section class="blog-section" id="blog">
+				<div class="container">
+					<div class="section-name center" data-aos="fade-up">
+						<div class="content">
+							<p class="above-title">My articles</p>
+							<h4 class="title">Personal Blog</h4>
+						</div>
+					</div>
+					<div class="post-item-wrapper">
+						<article class="post-item" data-aos="fade-up" data-aos-delay="50">
+							<figure>
+								<img src="assets/img/facade.jpg" alt="facade-image" />
+							</figure>
+							<div class="content">
+								<h3 class="title">Facade Pattern NGRx Architecture</h3>
+								<div class="detail">
+									<time class="tag">March 2025</time>
+								</div>
+								<p class="body">
+									The Facade Pattern is a structural design pattern that
+									provides a simplified interface to a complex...
+								</p>
+								<div class="bottom">
+									<a
+										href="https://dev.to/georg-easiedu/facade-pattern-with-ngrx-architecture-3l6p"
+										>Continue Reading</a
+									>
+								</div>
+							</div>
+						</article>
+						<article class="post-item" data-aos="fade-up" data-aos-delay="100">
+							<figure>
+								<img src="assets/img/security.jpg" alt="iam security" />
+							</figure>
+							<div class="content">
+								<h3 class="title">Cloud Security with AWS IAM</h3>
+								<div class="detail">
+									<time class="tag">April, 2025</time>
+								</div>
+								<p class="body">
+									AWS IAM is and Identity Access Manager, and we use it to
+									manage access to resources on an AWS account. I used AWS
+									IAM...
+								</p>
+								<div class="bottom">
+									<a
+										href="https://dev.to/georg-easiedu/understanding-cloud-security-with-aws-identity-and-access-management-iam-5139"
+										>Continue Reading</a
+									>
+								</div>
+							</div>
+						</article>
+						<article class="post-item" data-aos="fade-up" data-aos-delay="150">
+							<figure>
+								<img src="assets/img/rxjs.png" alt="rxjs-img" />
+							</figure>
+							<div class="content">
+								<h3 class="title">Pitfalls in using RxJs operators</h3>
+								<div class="detail">
+									<time class="tag">Sept, 2024</time>
+								</div>
+								<p class="body">
+									RxJs i a reactive design pattern used in angular. Although it
+									has its advantages, there are also many ...
+								</p>
+								<div class="bottom">
+									<a href="#">Continue Reading</a>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section class="testimonial-section" id="testimonials">
+				<div class="container">
+					<div class="section-name" data-aos="fade-up">
+						<p class="above-title">My clients</p>
+						<h4 class="title">Testimonials</h4>
+					</div>
+					<div class="testimonial-item-wrapper">
+						<div
+							class="testimonial-item"
+							data-aos="fade-up"
+							data-aos-delay="50"
+						>
+							<img
+								class="avatar"
+								src="assets/img/testimonial-avatar-1.jpg"
+								alt="Amelia Miller"
+							/>
+							<p class="text">
+								We were very pleased to hear how you resolved our website's user
+								interface issues and challenges.
+							</p>
+							<p class="name">Amelia Miller</p>
+							<p class="tag job-title">Designer</p>
+						</div>
+						<div
+							class="testimonial-item"
+							data-aos="fade-up"
+							data-aos-delay="100"
+						>
+							<img
+								class="avatar"
+								src="assets/img/testimonial-avatar-2.jpg"
+								alt="Amelia Miller"
+							/>
+							<p class="text">
+								I’m glad I decided to work with you. The project was delivered
+								on time with all the requirements.
+							</p>
+							<p class="name">James Delaney</p>
+							<p class="tag job-title">Developer</p>
+						</div>
+						<div
+							class="testimonial-item"
+							data-aos="fade-up"
+							data-aos-delay="150"
+						>
+							<img
+								class="avatar"
+								src="assets/img/testimonial-avatar-3.jpg"
+								alt="Amelia Miller"
+							/>
+							<p class="text">
+								The management of our projects was always faced with
+								difficulties, but you handled these well.
+							</p>
+							<p class="name">Isabella Bennett</p>
+							<p class="tag job-title">Manager</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="education-skill-section" id="education-skill">
+				<div class="container">
+					<div class="section-name" data-aos="fade-up">
+						<p class="above-title">Learning Path</p>
+						<h4 class="title">Education & Skills</h4>
+					</div>
+					<div class="education-skill-wrapper">
+						<div class="education">
+							<div
+								class="education-item"
+								data-aos="fade-up"
+								data-aos-delay="100"
+							>
+								<h4 class="school">Takoradi Technical University</h4>
+								<p class="degree-field">
+									Bachelor's degree - Software Engineering
+								</p>
+								<p class="date">2024</p>
+							</div>
+							<div
+								class="education-item"
+								data-aos="fade-up"
+								data-aos-delay="150"
+							>
+								<h4 class="school">Takoradi Technical University</h4>
+								<p class="degree-field">
+									Higher National Diploma - Information Technology
+								</p>
+								<p class="date">2021 - 2023</p>
+							</div>
+						</div>
+						<div class="skill">
+							<p class="description" data-aos="fade-up" data-aos-delay="50">
+								With over 4 years of hands-on experience in web development,
+								I've consistently explored modern technologies and frameworks to
+								sharpen my skills. Below is a snapshot of my technical
+								expertise.
+							</p>
+							<div
+								class="progress-bar-wrapper"
+								data-aos="fade-up"
+								data-aos-delay="50"
+							>
+								<div class="progress-bar">
+									<p class="label">Angular</p>
+									<div class="main-bar">
+										<div class="fill" data-width="75"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">HTML/CSS/SCSS</p>
+									<div class="main-bar">
+										<div class="fill" data-width="95"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">JavaScript/Typescript</p>
+									<div class="main-bar">
+										<div class="fill" data-width="75"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">Tailwind/Angular Material</p>
+									<div class="main-bar">
+										<div class="fill" data-width="95"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">Nest.js</p>
+									<div class="main-bar">
+										<div class="fill" data-width="60"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">FastAPI</p>
+									<div class="main-bar">
+										<div class="fill" data-width="40"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">Node.js</p>
+									<div class="main-bar">
+										<div class="fill" data-width="75"></div>
+									</div>
+								</div>
+								<div class="progress-bar">
+									<p class="label">AWS Cloud Services</p>
+									<div class="main-bar">
+										<div class="fill" data-width="65"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact-section" id="contact">
+				<div class="container">
+					<div class="contact-wrapper">
+						<div class="contact-form">
+							<form name="contactForm">
+								<p class="success-submit-message">
+									Your message has been successfully sent.
+								</p>
+								<p class="fail-submit-message">
+									An error occurred while sending the message.
+								</p>
+								<div class="form-control">
+									<input
+										aria-label="name"
+										name="name"
+										class="mb-16"
+										type="text"
+										placeholder="Name"
+										data-aos="fade-up"
+										data-aos-delay="50"
+									/>
+									<p class="validation-error name">Please enter your name.</p>
+								</div>
+								<div class="form-control">
+									<input
+										aria-label="email"
+										name="email"
+										class="mb-24"
+										type="text"
+										placeholder="Email"
+										data-aos="fade-up"
+										data-aos-delay="100"
+									/>
+									<p class="validation-error email">
+										Please enter your email address.
+									</p>
+								</div>
+								<div class="form-control">
+									<textarea
+										aria-label="message"
+										name="message"
+										rows="8"
+										placeholder="Message"
+										data-aos="fade-up"
+										data-aos-delay="150"
+									></textarea>
+									<p class="validation-error message">
+										Please enter your message.
+									</p>
+								</div>
+								<button
+									class="btn btn-primary submit-btn"
+									data-aos="fade-up"
+									data-aos-delay="200"
+								>
+									Submit
+									<span class="loading"></span>
+								</button>
+							</form>
+						</div>
+						<div class="contact-info">
+							<div
+								class="contact-info-item"
+								data-aos="fade-up"
+								data-aos-delay="50"
+							>
+								<div class="icon">
+									<svg viewBox="0 0 24 24">
+										<use xlink:href="assets/img/sprite.svg#address-icon"></use>
+									</svg>
+								</div>
+								<div class="content">
+									<h4 class="title">Address</h4>
+									<p class="body">Kasoa - Buduburam, Central Region, Ghana</p>
+								</div>
+							</div>
+							<div
+								class="contact-info-item"
+								data-aos="fade-up"
+								data-aos-delay="150"
+							>
+								<div class="icon">
+									<svg viewBox="0 0 24 24">
+										<use xlink:href="assets/img/sprite.svg#phone-icon"></use>
+									</svg>
+								</div>
+								<div class="content">
+									<h4 class="title">Phone</h4>
+									<p class="body">(233) 203631199</p>
+								</div>
+							</div>
+							<div
+								class="contact-info-item"
+								data-aos="fade-up"
+								data-aos-delay="200"
+							>
+								<div class="icon">
+									<svg viewBox="0 0 24 24">
+										<use xlink:href="assets/img/sprite.svg#email-icon"></use>
+									</svg>
+								</div>
+								<div class="content">
+									<h4 class="title">Email</h4>
+									<p class="body">asiedug41@gmail.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<ul class="social-icons" data-aos="fade-up" data-aos-delay="50">
+				<li>
+					<a href="https://github.com/george-asiedu">
+						<svg viewBox="0 0 24 24">
+							<use xlink:href="assets/img/sprite.svg#github-icon"></use>
+						</svg>
+					</a>
+				</li>
+				<li>
+					<a href="linkedin.com/in/george-kwabena-asiedu">
+						<svg viewBox="0 0 24 24">
+							<use xlink:href="assets/img/sprite.svg#linkedin-icon"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+			<p class="copyright" data-aos="fade-up" data-aos-delay="100">
+				© <span class="year">year</span> - George<span class="bold">
+					Asiedu</span
+				>
+			</p>
+		</footer>
+	</body>
+	<script src="assets/js/aos.js"></script>
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<script src="assets/js/kursor.js"></script>
+	<script src="assets/js/svg4everybody.min.js"></script>
+	<script src="assets/js/css-vars-ponyfill.min.js"></script>
+	<script src="assets/js/unfetch.js"></script>
+	<script src="./script.js"></script>
 </html>
