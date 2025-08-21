@@ -947,9 +947,6 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
     min-width: 410px;
     margin-right: 144px;
 }
-.education-skill-section .education-skill-wrapper .education:after {
-
-}
 .education-skill-section .education-skill-wrapper .education .education-item {
     padding-bottom: 64px;
     padding-left: 40px;
@@ -1038,6 +1035,7 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .contact-section .contact-wrapper {
     display: flex;
     align-items: center;
+    margin-top: 100px;
 }
 .contact-section .contact-wrapper .contact-form {
     margin-right: 104px;
