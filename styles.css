@@ -998,33 +998,40 @@ input[type='text']::placeholder, input[type='email']::placeholder,::placeholder 
 .education-skill-section .education-skill-wrapper .skill .description {
     color: var(--cinder-light);
     line-height: 32px;
+    margin-bottom: 40px;
 }
-.education-skill-section .education-skill-wrapper .skill .progress-bar-wrapper {
-    padding-top: 64px;
-    max-width: 551px;
+
+.education-skill-section .education-skill-wrapper .skill .skills-icons-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 32px;
+    max-width: 700px;
 }
-.education-skill-section .education-skill-wrapper .skill .progress-bar {
-    padding-bottom: 40px;
+
+.education-skill-section .education-skill-wrapper .skill .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
-.education-skill-section .education-skill-wrapper .skill .progress-bar .label {
+
+.education-skill-section .education-skill-wrapper .skill .skill-item .skill-icon {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease;
+}
+
+.education-skill-section .education-skill-wrapper .skill .skill-item .skill-icon:hover {
+    transform: scale(1.1);
+}
+
+.education-skill-section .education-skill-wrapper .skill .skill-item .label {
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
-    padding-bottom: 16px;
-}
-.education-skill-section .education-skill-wrapper .skill .progress-bar .main-bar {
-    width: 100%;
-    background: var(--purple-light-2);
-    border-radius: 2px;
-}
-.education-skill-section .education-skill-wrapper .skill .progress-bar .fill {
-    display: block;
-    height: 8px;
-    background-color: var(--purple);
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px;
-    transition: width .500s ease-in-out;
-    width: 0;
+    color: var(--cinder-light);
 }
 /* CONTACT SECTION */
 .contact-section {
