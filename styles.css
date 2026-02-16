@@ -819,7 +819,13 @@ input[type='email']::placeholder,
     border-color: var(--light-2);
 }
 
-.portfolio-section .portfolio-item .detail .title {
+.portfolio-section .portfolio-item .detail .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.portfolio-section .portfolio-item .detail .stack .title {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
